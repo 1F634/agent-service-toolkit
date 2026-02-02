@@ -25,7 +25,7 @@ from voice import VoiceManager
 
 
 APP_TITLE = "Agent Service Toolkit"
-APP_ICON = "🧰"
+APP_ICON = "🐭"
 USER_ID_COOKIE = "user_id"
 
 
@@ -164,10 +164,6 @@ async def main() -> None:
             st.image(
                 "https://github.com/JoshuaC215/agent-service-toolkit/blob/main/media/agent_architecture.png?raw=true"
             )
-            "[View full size on Github](https://github.com/JoshuaC215/agent-service-toolkit/blob/main/media/agent_architecture.png)"
-            st.caption(
-                "App hosted on [Streamlit Cloud](https://share.streamlit.io/) with FastAPI service running in [Azure](https://learn.microsoft.com/en-us/azure/app-service/)"
-            )
 
         if st.button(":material/schema: Architecture", use_container_width=True):
             architecture_dialog()
@@ -196,10 +192,7 @@ async def main() -> None:
         if st.button(":material/upload: Share/resume chat", use_container_width=True):
             share_chat_dialog()
 
-        "[View the source code](https://github.com/JoshuaC215/agent-service-toolkit)"
-        st.caption(
-            "Made with :material/favorite: by [Joshua](https://www.linkedin.com/in/joshua-k-carroll/) in Oakland"
-        )
+        "[View the source code](https://github.com/1F634/agent-service-toolkit)"
 
     # Draw existing messages
     messages: list[ChatMessage] = st.session_state.messages
